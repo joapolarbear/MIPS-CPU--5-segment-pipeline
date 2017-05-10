@@ -1,0 +1,16 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 82101b162a07433c9a04dfe4e121ee89 --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0 -L unisims_ver -L unimacro_ver -L secureip --snapshot maintb_behav xil_defaultlib.maintb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-29] main expects 16 arguments [G:/1-/cpu-run2/cpu2.srcs/sim_1/new/maintb.v:37]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port date [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:434]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port ir3 [G:/1-/cpu-run2/cpu2.srcs/sim_1/new/maintb.v:38]
+WARNING: [VRFC 10-278] actual bit length 2 differs from formal bit length 1 for port led3 [G:/1-/cpu-run2/cpu2.srcs/sim_1/new/maintb.v:39]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port x0 [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Interrupt.v:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:149]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:154]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:162]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:166]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port b [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:182]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

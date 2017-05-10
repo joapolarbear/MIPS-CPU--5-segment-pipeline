@@ -1,0 +1,233 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Thu Mar 09 13:30:05 2017
+| Host         : WIN7-20140914MO running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |   180 |
+| Minimum Number of register sites lost to control set restrictions |    59 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              54 |           35 |
+| No           | No                    | Yes                    |               5 |            5 |
+| No           | Yes                   | No                     |              94 |           24 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             104 |           35 |
+| Yes          | Yes                   | No                     |            1532 |          636 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------+-----------------------------------------------------------------------------------------+-----------------------------+------------------+----------------+
+|    Clock Signal    |                                      Enable Signal                                      |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++--------------------+-----------------------------------------------------------------------------------------+-----------------------------+------------------+----------------+
+|  ir1_IBUF_BUFG     |                                                                                         | inter/ir_u1/ir_reg          |                1 |              1 |
+|  ir2_IBUF_BUFG     |                                                                                         | inter/ir_u2/ir_reg          |                1 |              1 |
+|  clk_BUFG          |                                                                                         | reg21/AR[0]                 |                1 |              1 |
+|  clk_BUFG          |                                                                                         | reg4/AR[0]                  |                1 |              1 |
+|  ir3_IBUF_BUFG     |                                                                                         | inter/ir_u3/ir_reg          |                1 |              1 |
+|  clk_BUFG          | c_up2/count[3]_i_1__0_n_1                                                               | reg21/AR[0]                 |                1 |              4 |
+|  clk_BUFG          | c_up1/count[3]_i_1_n_1                                                                  | reg4/AR[0]                  |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_0_0_i_1_n_1      |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_10_10_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_11_11_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_13_13_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_12_12_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_14_14_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_15_15_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_16_16_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_17_17_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_18_18_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_19_19_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_1_1_i_1_n_1      |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_20_20_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_21_21_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_22_22_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_23_23_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_15_15_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_25_25_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_26_26_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_27_27_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_28_28_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_29_29_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_2_2_i_1_n_1      |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_30_30_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_31_31_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_3_3_i_1_n_1      |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_4_4_i_1_n_1      |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_5_5_i_1_n_1      |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_6_6_i_1_n_1      |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_7_7_i_1_n_1      |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_8_8_i_1_n_1      |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_9_9_i_1_n_1      |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_0_0_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_10_10_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_11_11_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_12_12_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_13_13_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_14_14_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_16_16_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_17_17_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_18_18_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_19_19_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_1_1_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_20_20_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_21_21_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_22_22_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_23_23_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_24_24_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_25_25_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_26_26_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_27_27_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_28_28_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_29_29_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_2_2_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_30_30_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_31_31_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_3_3_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_4_4_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_5_5_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_6_6_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_7_7_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_8_8_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_256_511_9_9_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_0_0_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_10_10_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_11_11_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_12_12_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_13_13_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_14_14_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_15_15_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_16_16_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_17_17_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_18_18_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_19_19_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_1_1_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_20_20_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_21_21_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_22_22_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_23_23_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_24_24_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_25_25_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_26_26_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_27_27_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_28_28_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_29_29_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_2_2_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_30_30_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_31_31_i_1_n_1  |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_3_3_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_4_4_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_5_5_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_6_6_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_7_7_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_8_8_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_512_767_9_9_i_1_n_1    |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_0_0_i_1_n_1   |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_10_10_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_11_11_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_12_12_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_13_13_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_14_14_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_15_15_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_16_16_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_17_17_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_18_18_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_19_19_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_1_1_i_1_n_1   |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_20_20_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_21_21_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_22_22_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_23_23_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_24_24_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_25_25_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_26_26_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_27_27_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_28_28_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_29_29_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_2_2_i_1_n_1   |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_30_30_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_31_31_i_1_n_1 |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_3_3_i_1_n_1   |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_4_4_i_1_n_1   |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_5_5_i_1_n_1   |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_6_6_i_1_n_1   |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_7_7_i_1_n_1   |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_8_8_i_1_n_1   |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_768_1023_9_9_i_1_n_1   |                             |                1 |              4 |
+|  clk_BUFG          | ram/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_24_24_i_1_n_1    |                             |                1 |              4 |
+|  clk_in_IBUF_BUFG  |                                                                                         |                             |                5 |              5 |
+|  ssg_block/clk_ssg |                                                                                         |                             |                3 |              8 |
+|  clk_BUFG          |                                                                                         |                             |                8 |              9 |
+|  clk_in_IBUF_BUFG  |                                                                                         | ssg_block/count[31]_i_1_n_1 |                8 |             31 |
+|  clk_in_IBUF_BUFG  |                                                                                         | cpu_block/count[31]_i_1_n_1 |                8 |             31 |
+| ~clk_BUFG          | mem_wb/reg2/E[0]                                                                        | clear_IBUF                  |               14 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[10][31][0]                                                      | clear_IBUF                  |               13 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[11][31][0]                                                      | clear_IBUF                  |               12 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[12][31][0]                                                      | clear_IBUF                  |               13 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[13][31][0]                                                      | clear_IBUF                  |               13 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[16][31][0]                                                      | clear_IBUF                  |               21 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[14][31][0]                                                      | clear_IBUF                  |               13 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[15][31][0]                                                      | clear_IBUF                  |               12 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[17][31][0]                                                      | clear_IBUF                  |               16 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[18][31][0]                                                      | clear_IBUF                  |               16 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[19][31][0]                                                      | clear_IBUF                  |               19 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[1][31][0]                                                       | clear_IBUF                  |               10 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[20][31][0]                                                      | clear_IBUF                  |               15 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[21][31][0]                                                      | clear_IBUF                  |               18 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[22][31][0]                                                      | clear_IBUF                  |               15 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[23][31][0]                                                      | clear_IBUF                  |               14 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[24][31][0]                                                      | clear_IBUF                  |               13 |             32 |
+|  n_0_2318_BUFG     |                                                                                         |                             |               19 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[26][31][0]                                                      | clear_IBUF                  |               15 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[27][31][0]                                                      | clear_IBUF                  |               14 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[28][31][0]                                                      | clear_IBUF                  |               15 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[29][31][0]                                                      | clear_IBUF                  |               14 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[2][31][0]                                                       | clear_IBUF                  |                9 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[30][31][0]                                                      | clear_IBUF                  |               16 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[31][31][0]                                                      | clear_IBUF                  |               16 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[3][31][0]                                                       | clear_IBUF                  |               10 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[4][31][0]                                                       | clear_IBUF                  |               10 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[5][31][0]                                                       | clear_IBUF                  |               10 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[6][31][0]                                                       | clear_IBUF                  |               10 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[8][31][0]                                                       | clear_IBUF                  |               15 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[9][31][0]                                                       | clear_IBUF                  |               16 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[25][31][0]                                                      | clear_IBUF                  |               18 |             32 |
+|  clk_BUFG          | reg2/E[0]                                                                               | clear_IBUF                  |               13 |             32 |
+| ~clk_BUFG          | mem_wb/reg6/regfile_reg[7][31][0]                                                       | clear_IBUF                  |               10 |             32 |
+|  clk_in_IBUF_BUFG  |                                                                                         | u23/count50k[0]_i_1_n_1     |                8 |             32 |
+| ~clk_BUFG          | if_id/reg2/out_reg[31]_4                                                                | clear_IBUF                  |               17 |             32 |
+| ~clk_BUFG          | mem_wb/reg2/cp0_reg1_reg[0]                                                             | clear_IBUF                  |               11 |             32 |
+|  clk_BUFG          | reg2/PAUSE                                                                              | clear_IBUF                  |                8 |             32 |
+|  clk_BUFG          | reg2/halt05_out                                                                         | clear_IBUF                  |               27 |             69 |
+|  clk_BUFG          | reg2/out_reg[5][0]                                                                      | clear_IBUF                  |              148 |            407 |
++--------------------+-----------------------------------------------------------------------------------------+-----------------------------+------------------+----------------+
+
+

@@ -1,0 +1,53 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run/cpu2.sim/sim_1/synth/timing/maintb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module Adder_0
+INFO: [VRFC 10-311] analyzing module CLK_1s
+INFO: [VRFC 10-311] analyzing module EX_Mem
+INFO: [VRFC 10-311] analyzing module Equal
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-311] analyzing module Mem_WB
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-311] analyzing module clockdivider
+INFO: [VRFC 10-311] analyzing module clockdivider__parameterized0
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_2
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module mux2_1width_32
+INFO: [VRFC 10-311] analyzing module mux2_1width_32_1
+INFO: [VRFC 10-311] analyzing module mux2_1width_32_2
+INFO: [VRFC 10-311] analyzing module mux2_1width_32_3
+INFO: [VRFC 10-311] analyzing module mux2_1width_32_4
+INFO: [VRFC 10-311] analyzing module mux2_1width_32_5
+INFO: [VRFC 10-311] analyzing module mux2_1width_32_6
+INFO: [VRFC 10-311] analyzing module mux2_1width_5
+INFO: [VRFC 10-311] analyzing module mux4_1width_32
+INFO: [VRFC 10-311] analyzing module mux4_1width_5
+INFO: [VRFC 10-311] analyzing module register_32
+INFO: [VRFC 10-311] analyzing module register_32_10
+INFO: [VRFC 10-311] analyzing module register_32_11
+INFO: [VRFC 10-311] analyzing module register_32_12
+INFO: [VRFC 10-311] analyzing module register_32_13
+INFO: [VRFC 10-311] analyzing module register_32_14
+INFO: [VRFC 10-311] analyzing module register_32_15
+INFO: [VRFC 10-311] analyzing module register_32_16
+INFO: [VRFC 10-311] analyzing module register_32_17
+INFO: [VRFC 10-311] analyzing module register_32_18
+INFO: [VRFC 10-311] analyzing module register_32_19
+INFO: [VRFC 10-311] analyzing module register_32_20
+INFO: [VRFC 10-311] analyzing module register_32_21
+INFO: [VRFC 10-311] analyzing module register_32_22
+INFO: [VRFC 10-311] analyzing module register_32_23
+INFO: [VRFC 10-311] analyzing module register_32_24
+INFO: [VRFC 10-311] analyzing module register_32_7
+INFO: [VRFC 10-311] analyzing module register_32_8
+INFO: [VRFC 10-311] analyzing module register_32_9
+INFO: [VRFC 10-311] analyzing module sevenseg
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run/cpu2.srcs/sim_1/new/maintb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maintb
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run/cpu2.sim/sim_1/synth/timing/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [G:/1-/cpu-run/cpu2.sim/sim_1/synth/timing/glbl.v:6]

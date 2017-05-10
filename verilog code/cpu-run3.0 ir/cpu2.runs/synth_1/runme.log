@@ -1,0 +1,1408 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/data/ip'.
+Command: synth_design -top main -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 273.059 ; gain = 94.910
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-638] synthesizing module 'clockdivider' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/clockdivider.v:23]
+	Parameter frequency bound to: 200000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clockdivider' (1#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/clockdivider.v:23]
+INFO: [Synth 8-638] synthesizing module 'clockdivider__parameterized0' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/clockdivider.v:23]
+	Parameter frequency bound to: 2000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clockdivider__parameterized0' (1#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/clockdivider.v:23]
+INFO: [Synth 8-638] synthesizing module 'CLK_1s' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/CLK_1s.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CLK_1s' (2#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/CLK_1s.v:23]
+INFO: [Synth 8-638] synthesizing module 'Mux' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Mux.v:23]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Mux' (3#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Mux.v:23]
+INFO: [Synth 8-638] synthesizing module 'Interrupt' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Interrupt.v:23]
+INFO: [Synth 8-638] synthesizing module 'Mux4_1' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Mux4_1.v:23]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Mux4_1' (4#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Mux4_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'ir_handle' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/ir_handle.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ir_handle' (5#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/ir_handle.v:23]
+INFO: [Synth 8-638] synthesizing module 'priority' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/priority.v:23]
+INFO: [Synth 8-256] done synthesizing module 'priority' (6#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/priority.v:23]
+INFO: [Synth 8-638] synthesizing module 'Mux__parameterized0' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Mux.v:23]
+	Parameter width bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Mux__parameterized0' (6#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Mux.v:23]
+WARNING: [Synth 8-567] referenced signal 'mtc0' should be on the sensitivity list [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Interrupt.v:60]
+INFO: [Synth 8-256] done synthesizing module 'Interrupt' (7#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Interrupt.v:23]
+INFO: [Synth 8-638] synthesizing module 'Counter' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Counter.v:23]
+	Parameter Size bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Counter' (8#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Counter.v:23]
+INFO: [Synth 8-638] synthesizing module 'CountUp' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/CountUp.v:23]
+	Parameter bound bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CountUp' (9#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/CountUp.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'count' does not match port width (4) of module 'CountUp' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:129]
+INFO: [Synth 8-638] synthesizing module 'Register' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Register.v:23]
+	Parameter width bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Register' (10#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Register.v:23]
+INFO: [Synth 8-638] synthesizing module 'CountUp__parameterized0' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/CountUp.v:23]
+	Parameter bound bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'CountUp__parameterized0' (10#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/CountUp.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'count' does not match port width (4) of module 'CountUp__parameterized0' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:142]
+INFO: [Synth 8-638] synthesizing module 'register_32' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/register_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'register_32' (11#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/register_32.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux2_1width_32' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/mux2_1width_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux2_1width_32' (12#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/mux2_1width_32.v:23]
+INFO: [Synth 8-638] synthesizing module 'Rom_User' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Rom_User/synth/Rom_User.vhd:66]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: Rom_User.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0' declared at 'g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:130' bound to instance 'U0' of component 'dist_mem_gen_v8_0' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Rom_User/synth/Rom_User.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_v8_0' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:186]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: Rom_User.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_v8_0_synth' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2867]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: Rom_User.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 0 - type: integer 
+	Parameter c_addr_width bound to: 10 - type: integer 
+	Parameter c_depth bound to: 1024 - type: integer 
+	Parameter c_width bound to: 32 - type: integer 
+	Parameter c_default_data bound to: 0 - type: string 
+	Parameter c_mem_init_file bound to: Rom_User.mif - type: string 
+	Parameter c_elaboration_dir bound to: ./ - type: string 
+	Parameter c_read_mif bound to: 1 - type: integer 
+	Parameter c_reg_a_d_inputs bound to: 0 - type: integer 
+	Parameter c_has_clk bound to: 0 - type: integer 
+	Parameter c_has_qspo_ce bound to: 0 - type: integer 
+	Parameter c_has_qspo_rst bound to: 0 - type: integer 
+	Parameter c_has_qspo_srst bound to: 0 - type: integer 
+	Parameter c_has_spo bound to: 1 - type: integer 
+	Parameter c_has_qspo bound to: 0 - type: integer 
+	Parameter c_sync_enable bound to: 1 - type: integer 
+	Parameter c_parser_type bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'rom' declared at 'g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:523' bound to instance 'rom_inst' of component 'rom' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2888]
+INFO: [Synth 8-638] synthesizing module 'rom' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:551]
+	Parameter c_addr_width bound to: 10 - type: integer 
+	Parameter c_depth bound to: 1024 - type: integer 
+	Parameter c_width bound to: 32 - type: integer 
+	Parameter c_default_data bound to: 0 - type: string 
+	Parameter c_mem_init_file bound to: Rom_User.mif - type: string 
+	Parameter c_elaboration_dir bound to: ./ - type: string 
+	Parameter c_read_mif bound to: 1 - type: integer 
+	Parameter c_reg_a_d_inputs bound to: 0 - type: integer 
+	Parameter c_has_clk bound to: 0 - type: integer 
+	Parameter c_has_qspo_ce bound to: 0 - type: integer 
+	Parameter c_has_qspo_rst bound to: 0 - type: integer 
+	Parameter c_has_qspo_srst bound to: 0 - type: integer 
+	Parameter c_has_spo bound to: 1 - type: integer 
+	Parameter c_has_qspo bound to: 0 - type: integer 
+	Parameter c_sync_enable bound to: 1 - type: integer 
+	Parameter c_parser_type bound to: 0 - type: integer 
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:674]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:678]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:745]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:883]
+WARNING: [Synth 8-3848] Net qspo in module/entity rom does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:548]
+INFO: [Synth 8-256] done synthesizing module 'rom' (13#1) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:551]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3054]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3060]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3065]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3071]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3077]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3082]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3087]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3092]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3100]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3105]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3113]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3118]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3126]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3134]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3142]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3147]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3152]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3157]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3165]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3170]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3179]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3184]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3189]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3194]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3199]
+WARNING: [Synth 8-3848] Net dpo in module/entity dist_mem_gen_v8_0_synth does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2859]
+WARNING: [Synth 8-3848] Net qdpo in module/entity dist_mem_gen_v8_0_synth does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2861]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_v8_0_synth' (14#1) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2867]
+WARNING: [Synth 8-3848] Net gnd_bus in module/entity dist_mem_gen_v8_0 does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:214]
+WARNING: [Synth 8-3848] Net gnd in module/entity dist_mem_gen_v8_0 does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:213]
+WARNING: [Synth 8-3848] Net vcc in module/entity dist_mem_gen_v8_0 does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:215]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_v8_0' (15#1) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:186]
+INFO: [Synth 8-256] done synthesizing module 'Rom_User' (16#1) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Rom_User/synth/Rom_User.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'Rom_trap4' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Rom_trap4/synth/Rom_trap4.vhd:66]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: Rom_trap4.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0' declared at 'g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:130' bound to instance 'U0' of component 'dist_mem_gen_v8_0' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Rom_trap4/synth/Rom_trap4.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_v8_0__parameterized1' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:186]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: Rom_trap4.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_v8_0_synth__parameterized0' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2867]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: Rom_trap4.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 0 - type: integer 
+	Parameter c_addr_width bound to: 10 - type: integer 
+	Parameter c_depth bound to: 1024 - type: integer 
+	Parameter c_width bound to: 32 - type: integer 
+	Parameter c_default_data bound to: 0 - type: string 
+	Parameter c_mem_init_file bound to: Rom_trap4.mif - type: string 
+	Parameter c_elaboration_dir bound to: ./ - type: string 
+	Parameter c_read_mif bound to: 1 - type: integer 
+	Parameter c_reg_a_d_inputs bound to: 0 - type: integer 
+	Parameter c_has_clk bound to: 0 - type: integer 
+	Parameter c_has_qspo_ce bound to: 0 - type: integer 
+	Parameter c_has_qspo_rst bound to: 0 - type: integer 
+	Parameter c_has_qspo_srst bound to: 0 - type: integer 
+	Parameter c_has_spo bound to: 1 - type: integer 
+	Parameter c_has_qspo bound to: 0 - type: integer 
+	Parameter c_sync_enable bound to: 1 - type: integer 
+	Parameter c_parser_type bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'rom' declared at 'g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:523' bound to instance 'rom_inst' of component 'rom' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2888]
+INFO: [Synth 8-638] synthesizing module 'rom__parameterized1' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:551]
+	Parameter c_addr_width bound to: 10 - type: integer 
+	Parameter c_depth bound to: 1024 - type: integer 
+	Parameter c_width bound to: 32 - type: integer 
+	Parameter c_default_data bound to: 0 - type: string 
+	Parameter c_mem_init_file bound to: Rom_trap4.mif - type: string 
+	Parameter c_elaboration_dir bound to: ./ - type: string 
+	Parameter c_read_mif bound to: 1 - type: integer 
+	Parameter c_reg_a_d_inputs bound to: 0 - type: integer 
+	Parameter c_has_clk bound to: 0 - type: integer 
+	Parameter c_has_qspo_ce bound to: 0 - type: integer 
+	Parameter c_has_qspo_rst bound to: 0 - type: integer 
+	Parameter c_has_qspo_srst bound to: 0 - type: integer 
+	Parameter c_has_spo bound to: 1 - type: integer 
+	Parameter c_has_qspo bound to: 0 - type: integer 
+	Parameter c_sync_enable bound to: 1 - type: integer 
+	Parameter c_parser_type bound to: 0 - type: integer 
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:674]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:678]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:883]
+WARNING: [Synth 8-3848] Net qspo in module/entity rom__parameterized1 does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:548]
+INFO: [Synth 8-256] done synthesizing module 'rom__parameterized1' (16#1) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:551]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3054]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3060]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3065]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3071]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3077]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3082]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3087]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3092]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3100]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3105]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3113]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3118]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3126]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3134]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3142]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3147]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3152]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3157]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3165]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3170]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3179]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3184]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3189]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3194]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3199]
+WARNING: [Synth 8-3848] Net dpo in module/entity dist_mem_gen_v8_0_synth__parameterized0 does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2859]
+WARNING: [Synth 8-3848] Net qdpo in module/entity dist_mem_gen_v8_0_synth__parameterized0 does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2861]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_v8_0_synth__parameterized0' (16#1) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2867]
+WARNING: [Synth 8-3848] Net gnd_bus in module/entity dist_mem_gen_v8_0__parameterized1 does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:214]
+WARNING: [Synth 8-3848] Net gnd in module/entity dist_mem_gen_v8_0__parameterized1 does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:213]
+WARNING: [Synth 8-3848] Net vcc in module/entity dist_mem_gen_v8_0__parameterized1 does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:215]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_v8_0__parameterized1' (16#1) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:186]
+INFO: [Synth 8-256] done synthesizing module 'Rom_trap4' (17#1) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Rom_trap4/synth/Rom_trap4.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'Adder' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Adder' (18#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'IF_ID' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/IF_ID.v:23]
+INFO: [Synth 8-256] done synthesizing module 'IF_ID' (19#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/IF_ID.v:23]
+INFO: [Synth 8-638] synthesizing module 'controler' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/controler.v:23]
+INFO: [Synth 8-638] synthesizing module 'trans' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/trans.v:23]
+INFO: [Synth 8-256] done synthesizing module 'trans' (20#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/trans.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux2_1width_4' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/mux2_1width_4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux2_1width_4' (21#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/mux2_1width_4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'controler' (22#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/controler.v:23]
+INFO: [Synth 8-638] synthesizing module 'Equal_5' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Equal_5.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Equal_5' (23#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Equal_5.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux4_1width_5' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/mux4_1width_5.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux4_1width_5' (24#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/mux4_1width_5.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux2_1width_5' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/mux2_1width_5.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux2_1width_5' (25#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/mux2_1width_5.v:23]
+INFO: [Synth 8-638] synthesizing module 'cp0_instruct' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/cp0_instruct.v:23]
+INFO: [Synth 8-256] done synthesizing module 'cp0_instruct' (26#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/cp0_instruct.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (27#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/RegFile.v:23]
+INFO: [Synth 8-638] synthesizing module 'Equal' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Equal.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Equal' (28#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Equal.v:23]
+INFO: [Synth 8-638] synthesizing module 'redirect' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/redirect.v:23]
+INFO: [Synth 8-256] done synthesizing module 'redirect' (29#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/redirect.v:23]
+INFO: [Synth 8-638] synthesizing module 'ID_EX' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/ID_EX.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ID_EX' (30#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/ID_EX.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux4_1width_32' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/mux4_1width_32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux4_1width_32' (31#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/mux4_1width_32.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/ALU.v:30]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (32#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'EX_Mem' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/EX_Mem.v:23]
+INFO: [Synth 8-256] done synthesizing module 'EX_Mem' (33#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/EX_Mem.v:23]
+INFO: [Synth 8-638] synthesizing module 'Ram' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/synth/Ram.vhd:69]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 1 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 1 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: no_coe_file_loaded - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 0 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0' declared at 'g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:130' bound to instance 'U0' of component 'dist_mem_gen_v8_0' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/synth/Ram.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_v8_0__parameterized3' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:186]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 1 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 1 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: no_coe_file_loaded - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 0 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_v8_0_synth__parameterized1' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2867]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 1 - type: integer 
+	Parameter C_HAS_D bound to: 1 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 1 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: no_coe_file_loaded - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 0 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 0 - type: integer 
+	Parameter c_addr_width bound to: 10 - type: integer 
+	Parameter c_depth bound to: 1024 - type: integer 
+	Parameter c_width bound to: 32 - type: integer 
+	Parameter c_default_data bound to: 0 - type: string 
+	Parameter c_mem_init_file bound to: no_coe_file_loaded - type: string 
+	Parameter c_elaboration_dir bound to: ./ - type: string 
+	Parameter c_read_mif bound to: 0 - type: integer 
+	Parameter c_has_i_ce bound to: 0 - type: integer 
+	Parameter c_qualify_we bound to: 0 - type: integer 
+	Parameter c_reg_a_d_inputs bound to: 0 - type: integer 
+	Parameter c_pipeline_stages bound to: 0 - type: integer 
+	Parameter c_has_qspo_ce bound to: 0 - type: integer 
+	Parameter c_has_qspo_rst bound to: 0 - type: integer 
+	Parameter c_has_qspo_srst bound to: 0 - type: integer 
+	Parameter c_has_spo bound to: 1 - type: integer 
+	Parameter c_has_qspo bound to: 0 - type: integer 
+	Parameter c_sync_enable bound to: 1 - type: integer 
+	Parameter c_parser_type bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'spram' declared at 'g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:962' bound to instance 'spram_inst' of component 'spram' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2920]
+INFO: [Synth 8-638] synthesizing module 'spram' [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:995]
+	Parameter c_addr_width bound to: 10 - type: integer 
+	Parameter c_depth bound to: 1024 - type: integer 
+	Parameter c_width bound to: 32 - type: integer 
+	Parameter c_default_data bound to: 0 - type: string 
+	Parameter c_mem_init_file bound to: no_coe_file_loaded - type: string 
+	Parameter c_elaboration_dir bound to: ./ - type: string 
+	Parameter c_read_mif bound to: 0 - type: integer 
+	Parameter c_has_i_ce bound to: 0 - type: integer 
+	Parameter c_qualify_we bound to: 0 - type: integer 
+	Parameter c_reg_a_d_inputs bound to: 0 - type: integer 
+	Parameter c_pipeline_stages bound to: 0 - type: integer 
+	Parameter c_has_qspo_ce bound to: 0 - type: integer 
+	Parameter c_has_qspo_rst bound to: 0 - type: integer 
+	Parameter c_has_qspo_srst bound to: 0 - type: integer 
+	Parameter c_has_spo bound to: 1 - type: integer 
+	Parameter c_has_qspo bound to: 0 - type: integer 
+	Parameter c_sync_enable bound to: 1 - type: integer 
+	Parameter c_parser_type bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:1196]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "pipe_distributed" *) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:1197]
+WARNING: [Synth 8-3848] Net qspo in module/entity spram does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:992]
+INFO: [Synth 8-256] done synthesizing module 'spram' (34#1) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:995]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3054]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3060]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3065]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3071]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3077]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3082]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3087]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3092]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3100]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3105]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3113]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3118]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3126]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3134]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3142]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3147]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3152]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3157]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3165]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3170]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3179]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3184]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3189]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3194]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3199]
+WARNING: [Synth 8-3848] Net dpo in module/entity dist_mem_gen_v8_0_synth__parameterized1 does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2859]
+WARNING: [Synth 8-3848] Net qdpo in module/entity dist_mem_gen_v8_0_synth__parameterized1 does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2861]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_v8_0_synth__parameterized1' (34#1) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:2867]
+WARNING: [Synth 8-3848] Net gnd_bus in module/entity dist_mem_gen_v8_0__parameterized3 does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:214]
+WARNING: [Synth 8-3848] Net vcc in module/entity dist_mem_gen_v8_0__parameterized3 does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:215]
+WARNING: [Synth 8-3848] Net gnd in module/entity dist_mem_gen_v8_0__parameterized3 does not have driver. [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:213]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_v8_0__parameterized3' (34#1) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:186]
+INFO: [Synth 8-256] done synthesizing module 'Ram' (35#1) [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/synth/Ram.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'mux2_1width_16' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/mux2_1width_16.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux2_1width_16' (36#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/mux2_1width_16.v:23]
+INFO: [Synth 8-638] synthesizing module 'Mem_WB' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Mem_WB.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Mem_WB' (37#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/Mem_WB.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'date' does not match port width (32) of module 'register_32' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:332]
+INFO: [Synth 8-638] synthesizing module 'sevenseg' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/sevenseg.v:3]
+INFO: [Synth 8-638] synthesizing module 'four2seven' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/427.v:2]
+INFO: [Synth 8-256] done synthesizing module 'four2seven' (38#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/427.v:2]
+INFO: [Synth 8-256] done synthesizing module 'sevenseg' (39#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/sevenseg.v:3]
+WARNING: [Synth 8-567] referenced signal 'branch' should be on the sensitivity list [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:336]
+WARNING: [Synth 8-567] referenced signal 'Jmp' should be on the sensitivity list [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:336]
+WARNING: [Synth 8-567] referenced signal 'eret' should be on the sensitivity list [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:336]
+WARNING: [Synth 8-567] referenced signal 'mfc0_EX' should be on the sensitivity list [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:377]
+WARNING: [Synth 8-567] referenced signal 'mfc0_Mem' should be on the sensitivity list [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:377]
+WARNING: [Synth 8-567] referenced signal 'rt_2' should be on the sensitivity list [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:377]
+WARNING: [Synth 8-567] referenced signal 'rs_2' should be on the sensitivity list [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:377]
+WARNING: [Synth 8-567] referenced signal 'choose' should be on the sensitivity list [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:407]
+WARNING: [Synth 8-567] referenced signal 'total_num' should be on the sensitivity list [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:407]
+WARNING: [Synth 8-567] referenced signal 'choose2' should be on the sensitivity list [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:407]
+WARNING: [Synth 8-567] referenced signal 'cp0_epc' should be on the sensitivity list [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:407]
+WARNING: [Synth 8-567] referenced signal 'led_temp3' should be on the sensitivity list [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:407]
+WARNING: [Synth 8-3848] Net redAluv0 in module/entity main does not have driver. [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:67]
+INFO: [Synth 8-256] done synthesizing module 'main' (40#1) [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/main.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 377.543 ; gain = 199.395
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[31] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[30] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[29] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[28] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[27] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[26] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[25] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[24] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[23] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[22] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[21] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[20] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[19] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[18] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[17] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[16] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[15] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[14] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[13] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[12] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[11] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[10] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[9] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[8] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[7] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[6] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[5] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[4] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[3] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[2] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[1] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[0] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[9] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[8] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[7] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[6] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[5] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[4] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[3] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[2] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[1] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[0] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :clk to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :we to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :i_ce to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qspo_ce to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qdpo_ce to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qdpo_clk to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qspo_rst to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qdpo_rst to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qspo_srst to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qdpo_srst to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[31] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[30] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[29] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[28] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[27] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[26] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[25] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[24] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[23] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[22] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[21] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[20] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[19] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[18] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[17] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[16] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[15] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[14] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[13] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[12] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[11] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[10] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[9] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[8] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[7] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[6] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[5] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[4] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[3] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[2] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[1] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :d[0] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[9] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[8] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[7] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[6] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[5] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[4] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[3] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[2] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[1] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :dpra[0] to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :clk to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :we to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :i_ce to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qspo_ce to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qdpo_ce to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+WARNING: [Synth 8-3295] tying undriven pin \synth_options.dist_mem_inst :qdpo_clk to constant 0 [g:/1-/cpu-run2/cpu2.srcs/sources_1/ip/Ram/dist_mem_gen_v8_0/hdl/dist_mem_gen_v8_0.vhd:222]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 377.543 ; gain = 199.395
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [G:/1-/cpu-run2/cpu2.srcs/constrs_1/new/cpu_xdc.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk_IBUF'. [G:/1-/cpu-run2/cpu2.srcs/constrs_1/new/cpu_xdc.xdc:1]
+WARNING: [Vivado 12-507] No nets matched 'clear_IBUF'. [G:/1-/cpu-run2/cpu2.srcs/constrs_1/new/cpu_xdc.xdc:2]
+WARNING: [Vivado 12-507] No nets matched 'ir2_IBUF'. [G:/1-/cpu-run2/cpu2.srcs/constrs_1/new/cpu_xdc.xdc:3]
+WARNING: [Vivado 12-507] No nets matched 'ir3_IBUF'. [G:/1-/cpu-run2/cpu2.srcs/constrs_1/new/cpu_xdc.xdc:4]
+Finished Parsing XDC File [G:/1-/cpu-run2/cpu2.srcs/constrs_1/new/cpu_xdc.xdc]
+Parsing XDC File [G:/1-/cpu-run2/cpu2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [G:/1-/cpu-run2/cpu2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 633.355 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 633.355 ; gain = 455.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 633.355 ; gain = 455.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for benchmark. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for your_instance_name. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 633.355 ; gain = 455.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count50k" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5544] ROM "set" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "regfile_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/ALU.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'R1_reg' [G:/1-/cpu-run2/cpu2.srcs/sources_1/new/ALU.v:31]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 633.355 ; gain = 455.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 27    
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 35    
+	   4 Input     32 Bit        Muxes := 5     
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 8     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 20    
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 52    
+	  14 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module main 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module clockdivider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module clockdivider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module CLK_1s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Mux4_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ir_handle 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module priority 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Mux__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module Interrupt 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module CountUp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 7     
+Module Register 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module CountUp__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 7     
+Module register_32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mux2_1width_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux2_1width_4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module mux4_1width_5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module mux2_1width_5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 31    
+Module mux4_1width_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+Module spram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mux2_1width_16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module four2seven 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+Module sevenseg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 633.355 ; gain = 455.207
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count50k" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+DSP Report: Generating DSP R10, operation Mode is: A*B.
+DSP Report: operator R10 is absorbed into DSP R10.
+DSP Report: operator R10 is absorbed into DSP R10.
+DSP Report: Generating DSP R10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator R10 is absorbed into DSP R10.
+DSP Report: operator R10 is absorbed into DSP R10.
+DSP Report: Generating DSP R10, operation Mode is: A*B.
+DSP Report: operator R10 is absorbed into DSP R10.
+DSP Report: operator R10 is absorbed into DSP R10.
+DSP Report: Generating DSP R10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator R10 is absorbed into DSP R10.
+DSP Report: operator R10 is absorbed into DSP R10.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 633.355 ; gain = 455.207
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 633.355 ; gain = 455.207
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------+------------+---------------+----------------+
+|Module Name       | RTL Object | Depth x Width | Implemented As | 
++------------------+------------+---------------+----------------+
+|rom               | rom__1     | 1024x32       | LUT            | 
+|rom               | rom__2     | 1024x32       | LUT            | 
+|dist_mem_gen_v8_0 | rom        | 1024x32       | LUT            | 
+|dist_mem_gen_v8_0 | rom__3     | 1024x32       | LUT            | 
++------------------+------------+---------------+----------------+
+
+
+Distributed RAM: 
++------------+-----------------------------------------------------------+----------------+----------------------+-------------------+-----------------------------------+
+|Module Name | RTL Object                                                | Inference      | Size (Depth x Width) | Primitives        | Hierarchical Name                 | 
++------------+-----------------------------------------------------------+----------------+----------------------+-------------------+-----------------------------------+
+|main        | synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg | User Attribute | 1 K x 32             | RAM256X1S x 128   | main/Ram/dist_mem_gen_v8_0/ram__2 | 
++------------+-----------------------------------------------------------+----------------+----------------------+-------------------+-----------------------------------+
+
+Note: The table shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+DSP:
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | No           | 16     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|ALU         | A*B            | No           | 18     | 18     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | No           | 18     | 16     | 48     | 25     | 48     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++------------+----------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inter/\reset_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (id_ex/\reg5/out_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[31] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[30] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[29] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[28] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[27] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[26] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[25] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[24] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[23] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[22] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[21] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[20] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[19] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[18] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[17] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[16] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[15] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[14] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[13] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[12] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[11] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[10] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[9] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[8] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[7] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[6] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[5] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[4] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[3] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reset_reg[2] ) is unused and will be removed from module Interrupt.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[31] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[30] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[29] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[28] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[27] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[26] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[25] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[24] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[23] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[22] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[21] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[20] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[19] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[18] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[17] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[16] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[10] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[9] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[8] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[7] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[6] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[5] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[4] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[3] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[2] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[1] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg2/out_reg[0] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[5] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg7/out_reg[13] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[31] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg7/out_reg[31] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg7/out_reg[30] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg7/out_reg[29] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg7/out_reg[28] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg7/out_reg[27] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg7/out_reg[26] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg7/out_reg[9] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg7/out_reg[8] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[6] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[7] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[8] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[9] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[10] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[11] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[12] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[13] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[14] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[15] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[16] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[17] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[18] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[19] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[20] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[21] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[22] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[23] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[24] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[25] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[26] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[27] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[28] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[29] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\reg5/out_reg[30] ) is unused and will be removed from module ID_EX.
+WARNING: [Synth 8-3332] Sequential element (\ex_mem/reg5/out_reg[31] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ex_mem/reg5/out_reg[30] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ex_mem/reg5/out_reg[29] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ex_mem/reg5/out_reg[28] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ex_mem/reg5/out_reg[27] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ex_mem/reg5/out_reg[26] ) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (\ex_mem/reg5/out_reg[25] ) is unused and will be removed from module main.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 633.355 ; gain = 455.207
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 633.355 ; gain = 455.207
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 633.355 ; gain = 455.207
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 694.277 ; gain = 516.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 698.145 ; gain = 519.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:24 ; elapsed = 00:01:28 . Memory (MB): peak = 786.934 ; gain = 608.785
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 786.934 ; gain = 608.785
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 786.934 ; gain = 608.785
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 786.934 ; gain = 608.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 786.934 ; gain = 608.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:25 ; elapsed = 00:01:30 . Memory (MB): peak = 786.934 ; gain = 608.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     6|
+|2     |CARRY4    |   370|
+|3     |DSP48E1   |     3|
+|4     |LUT1      |   175|
+|5     |LUT2      |   285|
+|6     |LUT3      |  1229|
+|7     |LUT4      |   134|
+|8     |LUT5      |   561|
+|9     |LUT6      |  1945|
+|10    |MUXF7     |   188|
+|11    |MUXF8     |    75|
+|12    |RAM256X1S |   128|
+|13    |FDCE      |    45|
+|14    |FDRE      |  1744|
+|15    |LD        |    32|
+|16    |IBUF      |     8|
+|17    |OBUF      |    23|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------------------------+----------------------------------------+------+
+|      |Instance                            |Module                                  |Cells |
++------+------------------------------------+----------------------------------------+------+
+|1     |top                                 |                                        |  6951|
+|2     |  inter                             |Interrupt                               |    86|
+|3     |    ir_u1                           |ir_handle                               |     5|
+|4     |    ir_u2                           |ir_handle_16                            |     5|
+|5     |    ir_u3                           |ir_handle_17                            |     8|
+|6     |  benchmark                         |Rom_User                                |   317|
+|7     |    U0                              |dist_mem_gen_v8_0                       |   317|
+|8     |  your_instance_name                |Rom_trap4                               |   465|
+|9     |    U0                              |dist_mem_gen_v8_0__parameterized1       |   465|
+|10    |  ram                               |Ram                                     |   320|
+|11    |    U0                              |dist_mem_gen_v8_0__parameterized3       |   320|
+|12    |      \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_synth__parameterized1 |   320|
+|13    |        \gen_sp_ram.spram_inst      |spram                                   |   320|
+|14    |  add1                              |Adder                                   |     8|
+|15    |  add2                              |Adder_0                                 |    38|
+|16    |  alu1                              |ALU                                     |   101|
+|17    |  c_up1                             |CountUp                                 |    12|
+|18    |  c_up2                             |CountUp__parameterized0                 |    11|
+|19    |  count_total                       |Counter                                 |   167|
+|20    |  cpu_block                         |clockdivider__parameterized0            |    81|
+|21    |  equal2                            |Equal                                   |     4|
+|22    |  ex_mem                            |EX_Mem                                  |   193|
+|23    |    reg1                            |register_32_27                          |    32|
+|24    |    reg2                            |register_32_28                          |     5|
+|25    |    reg3                            |register_32_29                          |    66|
+|26    |    reg4                            |register_32_30                          |    32|
+|27    |    reg5                            |register_32_31                          |    58|
+|28    |  id_ex                             |ID_EX                                   |  2031|
+|29    |    reg1                            |register_32_20                          |    34|
+|30    |    reg2                            |register_32_21                          |     5|
+|31    |    reg3                            |register_32_22                          |    32|
+|32    |    reg4                            |register_32_23                          |   216|
+|33    |    reg5                            |register_32_24                          |     5|
+|34    |    reg6                            |register_32_25                          |    17|
+|35    |    reg7                            |register_32_26                          |  1722|
+|36    |  if_id                             |IF_ID                                   |   198|
+|37    |    reg1                            |register_32_18                          |    32|
+|38    |    reg2                            |register_32_19                          |   166|
+|39    |  mem_wb                            |Mem_WB                                  |   213|
+|40    |    reg1                            |register_32_10                          |    32|
+|41    |    reg2                            |register_32_11                          |     8|
+|42    |    reg3                            |register_32_12                          |    32|
+|43    |    reg4                            |register_32_13                          |    32|
+|44    |    reg5                            |register_32_14                          |    64|
+|45    |    reg6                            |register_32_15                          |    45|
+|46    |  mux1                              |mux2_1width_32                          |   105|
+|47    |  mux11                             |mux2_1width_32_1                        |    64|
+|48    |  mux13                             |mux2_1width_32_2                        |    92|
+|49    |  mux14                             |mux2_1width_32_3                        |    33|
+|50    |  mux16                             |mux2_1width_32_4                        |    66|
+|51    |  mux18                             |mux2_1width_32_5                        |    32|
+|52    |  mux2                              |Mux4_1                                  |   104|
+|53    |  mux4                              |Mux                                     |    64|
+|54    |  mux5                              |mux4_1width_5                           |     5|
+|55    |  mux6                              |mux2_1width_5                           |    16|
+|56    |  mux7                              |mux2_1width_32_6                        |    20|
+|57    |  reg1                              |register_32                             |    33|
+|58    |  reg2                              |register_32_7                           |     5|
+|59    |  reg21                             |Register                                |     2|
+|60    |  reg3                              |register_32_8                           |    32|
+|61    |  reg4                              |Register_9                              |     2|
+|62    |  seg                               |sevenseg                                |    10|
+|63    |  ssg_block                         |clockdivider                            |    82|
+|64    |  u23                               |CLK_1s                                  |   120|
+|65    |  u33                               |RegFile                                 |  1781|
++------+------------------------------------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 786.934 ; gain = 608.785
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 234 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:18 . Memory (MB): peak = 786.934 ; gain = 305.988
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 786.934 ; gain = 608.785
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 541 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 1088 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 160 instances were transformed.
+  LD => LDCE: 32 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+159 Infos, 321 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:30 . Memory (MB): peak = 786.934 ; gain = 561.801
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 786.934 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 09 12:56:41 2017...

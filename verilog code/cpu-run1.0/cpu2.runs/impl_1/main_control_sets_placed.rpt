@@ -1,0 +1,94 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Tue Mar 07 19:03:05 2017
+| Host         : WIN7-20140914MO running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    41 |
+| Minimum Number of register sites lost to control set restrictions |    19 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              44 |           38 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              96 |           24 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1417 |          665 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------+------------------------------------+-----------------------------+------------------+----------------+
+|    Clock Signal    |            Enable Signal           |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++--------------------+------------------------------------+-----------------------------+------------------+----------------+
+|  clk_BUFG          |                                    |                             |                1 |              1 |
+|  clk_in_IBUF_BUFG  |                                    |                             |                3 |              3 |
+|  ssg_block/clk_ssg |                                    |                             |                2 |              8 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[17][31][0] | clear_IBUF_BUFG             |               20 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[30][31][0] | clear_IBUF_BUFG             |               19 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[31][31][0] | clear_IBUF_BUFG             |               20 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[3][31][0]  | clear_IBUF_BUFG             |               12 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[4][31][0]  | clear_IBUF_BUFG             |               10 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[5][31][0]  | clear_IBUF_BUFG             |               11 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[6][31][0]  | clear_IBUF_BUFG             |               13 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[7][31][0]  | clear_IBUF_BUFG             |               10 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[8][31][0]  | clear_IBUF_BUFG             |               18 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[9][31][0]  | clear_IBUF_BUFG             |               18 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[12][31][0] | clear_IBUF_BUFG             |               17 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[10][31][0] | clear_IBUF_BUFG             |               15 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[11][31][0] | clear_IBUF_BUFG             |               17 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[13][31][0] | clear_IBUF_BUFG             |               17 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[14][31][0] | clear_IBUF_BUFG             |               18 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[15][31][0] | clear_IBUF_BUFG             |               18 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[16][31][0] | clear_IBUF_BUFG             |               21 |             32 |
+|  n_0_18394_BUFG    |                                    |                             |               32 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[18][31][0] | clear_IBUF_BUFG             |               22 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[19][31][0] | clear_IBUF_BUFG             |               21 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[1][31][0]  | clear_IBUF_BUFG             |               14 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[20][31][0] | clear_IBUF_BUFG             |               21 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[21][31][0] | clear_IBUF_BUFG             |               23 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[22][31][0] | clear_IBUF_BUFG             |               20 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[23][31][0] | clear_IBUF_BUFG             |               23 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[24][31][0] | clear_IBUF_BUFG             |               20 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[25][31][0] | clear_IBUF_BUFG             |               17 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[26][31][0] | clear_IBUF_BUFG             |               20 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[27][31][0] | clear_IBUF_BUFG             |               18 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[28][31][0] | clear_IBUF_BUFG             |               18 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[29][31][0] | clear_IBUF_BUFG             |               21 |             32 |
+| ~clk_BUFG          | mem_wb/reg5/regfile_reg[2][31][0]  | clear_IBUF_BUFG             |                9 |             32 |
+| ~clk_BUFG          | if_id/reg2/Syscall                 | clear_IBUF_BUFG             |               14 |             32 |
+|  clk_in_IBUF_BUFG  |                                    | cpu_block/count[31]_i_1_n_1 |                8 |             32 |
+|  clk_in_IBUF_BUFG  |                                    | u23/count50k[0]_i_1_n_1     |                8 |             32 |
+|  clk_in_IBUF_BUFG  |                                    | ssg_block/halfCycle         |                8 |             32 |
+|  clk_BUFG          | if_id/reg2/E[0]                    | clear_IBUF_BUFG             |               28 |            102 |
+|  clk_BUFG          | reg2/E[0]                          | clear_IBUF_BUFG             |               82 |            291 |
++--------------------+------------------------------------+-----------------------------+------------------+----------------+
+
+

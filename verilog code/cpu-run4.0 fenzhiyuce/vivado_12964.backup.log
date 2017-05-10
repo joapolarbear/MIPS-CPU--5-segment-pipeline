@@ -1,0 +1,1556 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Mar 09 09:31:44 2017
+# Process ID: 16348
+# Log file: G:/1-/cpu-run-sim/vivado.log
+# Journal file: G:/1-/cpu-run-sim\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/1-/cpu-run-sim/cpu2.xpr
+INFO: [Project 1-313] Project file moved from 'G:/1-/cpu-run' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 742.590 ; gain = 91.887
+set_property top maintb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'maintb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/Rom_Trap.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/trap3.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/Rom_User.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/benchmark.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.mif'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/branch.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/jump.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/shift.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+"xvlog -m64 --relax -prj maintb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ir_handle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ir_handle
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/priority.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/trans.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/427.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four2seven
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/register_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4_1
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/sim/Rom_Trap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_Trap
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/sim/Rom_User.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_User
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CountUp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CountUp
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/redirect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module redirect
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_5
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_32
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mem_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/EX_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/cp0_instruct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_instruct
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controler
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/clockdivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockdivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CLK_1s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/sevenseg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenseg
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sim_1/new/maintb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maintb
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 82101b162a07433c9a04dfe4e121ee89 --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0 -L unisims_ver -L unimacro_ver -L secureip --snapshot maintb_behav xil_defaultlib.maintb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port date [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:322]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port x0 [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v:121]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:130]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:135]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:143]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:147]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clockdivider(frequency=2)
+Compiling module xil_defaultlib.clockdivider(frequency=20)
+Compiling module xil_defaultlib.CLK_1s
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.Mux4_1
+Compiling module xil_defaultlib.ir_handle
+Compiling module xil_defaultlib.priority
+Compiling module xil_defaultlib.Mux(width=2)
+Compiling module xil_defaultlib.Interrupt
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.CountUp(bound=7)
+Compiling module xil_defaultlib.Register(width=1)
+Compiling module xil_defaultlib.CountUp(bound=1)
+Compiling module xil_defaultlib.register_32
+Compiling module xil_defaultlib.mux2_1width_32
+Compiling module dist_mem_gen_v8_0.dist_mem_gen_v8_0(C_FAMILY="arti...
+Compiling module xil_defaultlib.Rom_User
+Compiling module dist_mem_gen_v8_0.dist_mem_gen_v8_0(C_FAMILY="arti...
+Compiling module xil_defaultlib.Rom_Trap
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.trans
+Compiling module xil_defaultlib.mux2_1width_4
+Compiling module xil_defaultlib.controler
+Compiling module xil_defaultlib.Equal_5
+Compiling module xil_defaultlib.mux4_1width_5
+Compiling module xil_defaultlib.mux2_1width_5
+Compiling module xil_defaultlib.cp0_instruct
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Equal
+Compiling module xil_defaultlib.redirect
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.mux4_1width_32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_Mem
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.mux2_1width_16
+Compiling module xil_defaultlib.Mem_WB
+Compiling module xil_defaultlib.four2seven
+Compiling module xil_defaultlib.sevenseg
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.maintb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot maintb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Mar 09 09:35:24 2017. For additional details about this file, please refer to the WebTalk help file at F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 09 09:35:24 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 767.629 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "maintb_behav -key {Behavioral:sim_1:Functional:maintb} -tclbatch {maintb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source maintb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'maintb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 778.801 ; gain = 11.172
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 804.383 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'maintb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/Rom_Trap.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/trap3.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/Rom_User.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/benchmark.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.mif'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/branch.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/jump.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/shift.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+"xvlog -m64 --relax -prj maintb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ir_handle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ir_handle
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/priority.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/trans.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/427.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four2seven
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/register_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4_1
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/sim/Rom_Trap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_Trap
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/sim/Rom_User.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_User
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CountUp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CountUp
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/redirect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module redirect
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_5
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_32
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mem_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/EX_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/cp0_instruct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_instruct
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controler
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/clockdivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockdivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CLK_1s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/sevenseg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenseg
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sim_1/new/maintb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maintb
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 82101b162a07433c9a04dfe4e121ee89 --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0 -L unisims_ver -L unimacro_ver -L secureip --snapshot maintb_behav xil_defaultlib.maintb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port date [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:322]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port x0 [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v:121]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:130]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:135]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:143]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:147]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clockdivider(frequency=1)
+Compiling module xil_defaultlib.CLK_1s
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.Mux4_1
+Compiling module xil_defaultlib.ir_handle
+Compiling module xil_defaultlib.priority
+Compiling module xil_defaultlib.Mux(width=2)
+Compiling module xil_defaultlib.Interrupt
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.CountUp(bound=7)
+Compiling module xil_defaultlib.Register(width=1)
+Compiling module xil_defaultlib.CountUp(bound=1)
+Compiling module xil_defaultlib.register_32
+Compiling module xil_defaultlib.mux2_1width_32
+Compiling module dist_mem_gen_v8_0.dist_mem_gen_v8_0(C_FAMILY="arti...
+Compiling module xil_defaultlib.Rom_User
+Compiling module dist_mem_gen_v8_0.dist_mem_gen_v8_0(C_FAMILY="arti...
+Compiling module xil_defaultlib.Rom_Trap
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.trans
+Compiling module xil_defaultlib.mux2_1width_4
+Compiling module xil_defaultlib.controler
+Compiling module xil_defaultlib.Equal_5
+Compiling module xil_defaultlib.mux4_1width_5
+Compiling module xil_defaultlib.mux2_1width_5
+Compiling module xil_defaultlib.cp0_instruct
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Equal
+Compiling module xil_defaultlib.redirect
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.mux4_1width_32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_Mem
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.mux2_1width_16
+Compiling module xil_defaultlib.Mem_WB
+Compiling module xil_defaultlib.four2seven
+Compiling module xil_defaultlib.sevenseg
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.maintb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot maintb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Mar 09 09:37:41 2017. For additional details about this file, please refer to the WebTalk help file at F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 09 09:37:41 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 804.383 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "maintb_behav -key {Behavioral:sim_1:Functional:maintb} -tclbatch {maintb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source maintb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 804.383 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'maintb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 804.383 ; gain = 0.000
+run 1000 us
+run 1000 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 854.242 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'maintb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/Rom_Trap.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/trap3.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/Rom_User.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/benchmark.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.mif'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/branch.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/jump.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/shift.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+"xvlog -m64 --relax -prj maintb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ir_handle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ir_handle
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/priority.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/trans.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/427.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four2seven
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/register_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4_1
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/sim/Rom_Trap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_Trap
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/sim/Rom_User.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_User
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/redirect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module redirect
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_5
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_32
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mem_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/EX_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/cp0_instruct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_instruct
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controler
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/clockdivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockdivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CLK_1s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/sevenseg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenseg
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sim_1/new/maintb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maintb
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 82101b162a07433c9a04dfe4e121ee89 --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0 -L unisims_ver -L unimacro_ver -L secureip --snapshot maintb_behav xil_defaultlib.maintb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <CountUp> not found while processing module instance <c_up1> [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:127]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port date [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:322]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port x0 [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v:121]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:135]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:147]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-99] Step results log file:'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/elaborate.log' file for more information.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'maintb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/Rom_Trap.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/trap3.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/Rom_User.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/benchmark.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.mif'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/branch.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/jump.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/shift.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+"xvlog -m64 --relax -prj maintb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ir_handle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ir_handle
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/priority.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/trans.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/427.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four2seven
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/register_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4_1
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CountUp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CountUp
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/sim/Rom_Trap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_Trap
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/sim/Rom_User.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_User
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/redirect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module redirect
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_5
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_32
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mem_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/EX_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/cp0_instruct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_instruct
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controler
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/clockdivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockdivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CLK_1s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/sevenseg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenseg
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sim_1/new/maintb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maintb
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 82101b162a07433c9a04dfe4e121ee89 --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0 -L unisims_ver -L unimacro_ver -L secureip --snapshot maintb_behav xil_defaultlib.maintb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port date [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:322]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port x0 [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v:121]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:130]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:135]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:143]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:147]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clockdivider(frequency=1)
+Compiling module xil_defaultlib.CLK_1s
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.Mux4_1
+Compiling module xil_defaultlib.ir_handle
+Compiling module xil_defaultlib.priority
+Compiling module xil_defaultlib.Mux(width=2)
+Compiling module xil_defaultlib.Interrupt
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.CountUp(bound=7)
+Compiling module xil_defaultlib.Register(width=1)
+Compiling module xil_defaultlib.CountUp(bound=1)
+Compiling module xil_defaultlib.register_32
+Compiling module xil_defaultlib.mux2_1width_32
+Compiling module dist_mem_gen_v8_0.dist_mem_gen_v8_0(C_FAMILY="arti...
+Compiling module xil_defaultlib.Rom_User
+Compiling module dist_mem_gen_v8_0.dist_mem_gen_v8_0(C_FAMILY="arti...
+Compiling module xil_defaultlib.Rom_Trap
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.trans
+Compiling module xil_defaultlib.mux2_1width_4
+Compiling module xil_defaultlib.controler
+Compiling module xil_defaultlib.Equal_5
+Compiling module xil_defaultlib.mux4_1width_5
+Compiling module xil_defaultlib.mux2_1width_5
+Compiling module xil_defaultlib.cp0_instruct
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Equal
+Compiling module xil_defaultlib.redirect
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.mux4_1width_32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_Mem
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.mux2_1width_16
+Compiling module xil_defaultlib.Mem_WB
+Compiling module xil_defaultlib.four2seven
+Compiling module xil_defaultlib.sevenseg
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.maintb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot maintb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Mar 09 09:45:35 2017. For additional details about this file, please refer to the WebTalk help file at F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 09 09:45:35 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 854.242 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "maintb_behav -key {Behavioral:sim_1:Functional:maintb} -tclbatch {maintb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source maintb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'maintb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 854.242 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+run 1000 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 854.242 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'maintb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/Rom_Trap.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/trap3.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/Rom_User.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/benchmark.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.mif'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/branch.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/jump.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/shift.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+"xvlog -m64 --relax -prj maintb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ir_handle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ir_handle
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/priority.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/trans.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/427.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four2seven
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/register_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4_1
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CountUp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CountUp
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/sim/Rom_Trap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_Trap
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/sim/Rom_User.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_User
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/redirect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module redirect
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_5
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_32
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mem_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/EX_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/cp0_instruct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_instruct
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controler
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/clockdivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockdivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CLK_1s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/sevenseg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenseg
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sim_1/new/maintb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maintb
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 82101b162a07433c9a04dfe4e121ee89 --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0 -L unisims_ver -L unimacro_ver -L secureip --snapshot maintb_behav xil_defaultlib.maintb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port date [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:323]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port x0 [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v:121]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:131]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:136]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:144]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:148]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clockdivider(frequency=1)
+Compiling module xil_defaultlib.CLK_1s
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.Mux4_1
+Compiling module xil_defaultlib.ir_handle
+Compiling module xil_defaultlib.priority
+Compiling module xil_defaultlib.Mux(width=2)
+Compiling module xil_defaultlib.Interrupt
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.CountUp(bound=7)
+Compiling module xil_defaultlib.Register(width=1)
+Compiling module xil_defaultlib.CountUp(bound=1)
+Compiling module xil_defaultlib.register_32
+Compiling module xil_defaultlib.mux2_1width_32
+Compiling module dist_mem_gen_v8_0.dist_mem_gen_v8_0(C_FAMILY="arti...
+Compiling module xil_defaultlib.Rom_User
+Compiling module dist_mem_gen_v8_0.dist_mem_gen_v8_0(C_FAMILY="arti...
+Compiling module xil_defaultlib.Rom_Trap
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.trans
+Compiling module xil_defaultlib.mux2_1width_4
+Compiling module xil_defaultlib.controler
+Compiling module xil_defaultlib.Equal_5
+Compiling module xil_defaultlib.mux4_1width_5
+Compiling module xil_defaultlib.mux2_1width_5
+Compiling module xil_defaultlib.cp0_instruct
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Equal
+Compiling module xil_defaultlib.redirect
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.mux4_1width_32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_Mem
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.mux2_1width_16
+Compiling module xil_defaultlib.Mem_WB
+Compiling module xil_defaultlib.four2seven
+Compiling module xil_defaultlib.sevenseg
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.maintb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot maintb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 4071431475 -regid "" -xml G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/usage_statistics_ext_xsim.xm..."
+    (file "G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 09 09:49:27 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 854.242 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "maintb_behav -key {Behavioral:sim_1:Functional:maintb} -tclbatch {maintb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source maintb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 854.242 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'maintb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:28 . Memory (MB): peak = 854.242 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 854.242 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'maintb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/Rom_Trap.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/trap3.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/Rom_User.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/benchmark.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.mif'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/branch.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/jump.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/shift.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+"xvlog -m64 --relax -prj maintb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ir_handle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ir_handle
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/priority.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/trans.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/427.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four2seven
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/register_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4_1
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CountUp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CountUp
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/sim/Rom_Trap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_Trap
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/sim/Rom_User.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_User
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/redirect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module redirect
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_5
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_32
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mem_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/EX_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/cp0_instruct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_instruct
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controler
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/clockdivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockdivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CLK_1s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/sevenseg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenseg
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sim_1/new/maintb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maintb
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 82101b162a07433c9a04dfe4e121ee89 --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0 -L unisims_ver -L unimacro_ver -L secureip --snapshot maintb_behav xil_defaultlib.maintb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port date [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:323]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port x0 [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v:121]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:131]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:136]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:144]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:148]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clockdivider(frequency=1)
+Compiling module xil_defaultlib.CLK_1s
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.Mux4_1
+Compiling module xil_defaultlib.ir_handle
+Compiling module xil_defaultlib.priority
+Compiling module xil_defaultlib.Mux(width=2)
+Compiling module xil_defaultlib.Interrupt
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.CountUp(bound=7)
+Compiling module xil_defaultlib.Register(width=1)
+Compiling module xil_defaultlib.CountUp(bound=1)
+Compiling module xil_defaultlib.register_32
+Compiling module xil_defaultlib.mux2_1width_32
+Compiling module dist_mem_gen_v8_0.dist_mem_gen_v8_0(C_FAMILY="arti...
+Compiling module xil_defaultlib.Rom_User
+Compiling module dist_mem_gen_v8_0.dist_mem_gen_v8_0(C_FAMILY="arti...
+Compiling module xil_defaultlib.Rom_Trap
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.trans
+Compiling module xil_defaultlib.mux2_1width_4
+Compiling module xil_defaultlib.controler
+Compiling module xil_defaultlib.Equal_5
+Compiling module xil_defaultlib.mux4_1width_5
+Compiling module xil_defaultlib.mux2_1width_5
+Compiling module xil_defaultlib.cp0_instruct
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Equal
+Compiling module xil_defaultlib.redirect
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.mux4_1width_32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_Mem
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.mux2_1width_16
+Compiling module xil_defaultlib.Mem_WB
+Compiling module xil_defaultlib.four2seven
+Compiling module xil_defaultlib.sevenseg
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.maintb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot maintb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2073268332 -regid "" -xml G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/usage_statistics_ext_xsim.xm..."
+    (file "G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 09 09:52:14 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 854.242 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "maintb_behav -key {Behavioral:sim_1:Functional:maintb} -tclbatch {maintb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source maintb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 854.242 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'maintb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 854.242 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 854.242 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'maintb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/Rom_Trap.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/trap3.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/Rom_User.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/benchmark.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.mif'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/branch.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/jump.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/shift.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+"xvlog -m64 --relax -prj maintb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ir_handle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ir_handle
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/priority.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/trans.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/427.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four2seven
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/register_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4_1
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CountUp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CountUp
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/sim/Rom_Trap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_Trap
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/sim/Rom_User.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_User
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/redirect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module redirect
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_5
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_32
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mem_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/EX_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/cp0_instruct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_instruct
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controler
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/clockdivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockdivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CLK_1s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/sevenseg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenseg
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sim_1/new/maintb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maintb
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 82101b162a07433c9a04dfe4e121ee89 --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0 -L unisims_ver -L unimacro_ver -L secureip --snapshot maintb_behav xil_defaultlib.maintb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port date [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:323]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port x0 [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v:121]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:131]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:136]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:144]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:148]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clockdivider(frequency=1)
+Compiling module xil_defaultlib.clockdivider(frequency=2)
+Compiling module xil_defaultlib.CLK_1s
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.Mux4_1
+Compiling module xil_defaultlib.ir_handle
+Compiling module xil_defaultlib.priority
+Compiling module xil_defaultlib.Mux(width=2)
+Compiling module xil_defaultlib.Interrupt
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.CountUp(bound=7)
+Compiling module xil_defaultlib.Register(width=1)
+Compiling module xil_defaultlib.CountUp(bound=1)
+Compiling module xil_defaultlib.register_32
+Compiling module xil_defaultlib.mux2_1width_32
+Compiling module dist_mem_gen_v8_0.dist_mem_gen_v8_0(C_FAMILY="arti...
+Compiling module xil_defaultlib.Rom_User
+Compiling module dist_mem_gen_v8_0.dist_mem_gen_v8_0(C_FAMILY="arti...
+Compiling module xil_defaultlib.Rom_Trap
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.trans
+Compiling module xil_defaultlib.mux2_1width_4
+Compiling module xil_defaultlib.controler
+Compiling module xil_defaultlib.Equal_5
+Compiling module xil_defaultlib.mux4_1width_5
+Compiling module xil_defaultlib.mux2_1width_5
+Compiling module xil_defaultlib.cp0_instruct
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Equal
+Compiling module xil_defaultlib.redirect
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.mux4_1width_32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_Mem
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.mux2_1width_16
+Compiling module xil_defaultlib.Mem_WB
+Compiling module xil_defaultlib.four2seven
+Compiling module xil_defaultlib.sevenseg
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.maintb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot maintb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Mar 09 09:54:36 2017. For additional details about this file, please refer to the WebTalk help file at F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 09 09:54:36 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 854.242 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "maintb_behav -key {Behavioral:sim_1:Functional:maintb} -tclbatch {maintb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source maintb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'maintb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 854.242 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 869.148 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'maintb' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/Rom_Trap.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/trap3.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/Rom_User.mif'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/111/benchmark.coe'
+INFO: [USF-XSim-66] Exported 'g:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.mif'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/branch.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/jump.coe'
+INFO: [USF-XSim-66] Exported 'G:/1-/cpu-run-sim/111/shift.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+"xvlog -m64 --relax -prj maintb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ir_handle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ir_handle
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/priority.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/trans.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module trans
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/427.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four2seven
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/register_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux4_1
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mux4_1.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CountUp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CountUp
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_Trap/sim/Rom_Trap.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_Trap
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/ip/Rom_User/sim/Rom_User.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rom_User
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/redirect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module redirect
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_5
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_5.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1width_32
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux4_1width_32.v:27]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/mux2_1width_16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2_1width_16
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Mem_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/EX_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/cp0_instruct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_instruct
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controler
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/clockdivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockdivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/CLK_1s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_1s
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/sevenseg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenseg
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Equal_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Equal_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.srcs/sim_1/new/maintb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maintb
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 82101b162a07433c9a04dfe4e121ee89 --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0 -L unisims_ver -L unimacro_ver -L secureip --snapshot maintb_behav xil_defaultlib.maintb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port date [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:323]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port x0 [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/Interrupt.v:121]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:131]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:136]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port count [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:144]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en [G:/1-/cpu-run-sim/cpu2.srcs/sources_1/new/main.v:148]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clockdivider(frequency=1)
+Compiling module xil_defaultlib.clockdivider(frequency=2)
+Compiling module xil_defaultlib.CLK_1s
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.Mux4_1
+Compiling module xil_defaultlib.ir_handle
+Compiling module xil_defaultlib.priority
+Compiling module xil_defaultlib.Mux(width=2)
+Compiling module xil_defaultlib.Interrupt
+Compiling module xil_defaultlib.Counter
+Compiling module xil_defaultlib.CountUp(bound=7)
+Compiling module xil_defaultlib.Register(width=1)
+Compiling module xil_defaultlib.CountUp(bound=1)
+Compiling module xil_defaultlib.register_32
+Compiling module xil_defaultlib.mux2_1width_32
+Compiling module dist_mem_gen_v8_0.dist_mem_gen_v8_0(C_FAMILY="arti...
+Compiling module xil_defaultlib.Rom_User
+Compiling module dist_mem_gen_v8_0.dist_mem_gen_v8_0(C_FAMILY="arti...
+Compiling module xil_defaultlib.Rom_Trap
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.IF_ID
+Compiling module xil_defaultlib.trans
+Compiling module xil_defaultlib.mux2_1width_4
+Compiling module xil_defaultlib.controler
+Compiling module xil_defaultlib.Equal_5
+Compiling module xil_defaultlib.mux4_1width_5
+Compiling module xil_defaultlib.mux2_1width_5
+Compiling module xil_defaultlib.cp0_instruct
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.Equal
+Compiling module xil_defaultlib.redirect
+Compiling module xil_defaultlib.ID_EX
+Compiling module xil_defaultlib.mux4_1width_32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_Mem
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.mux2_1width_16
+Compiling module xil_defaultlib.Mem_WB
+Compiling module xil_defaultlib.four2seven
+Compiling module xil_defaultlib.sevenseg
+Compiling module xil_defaultlib.main
+Compiling module xil_defaultlib.maintb
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot maintb_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav/xsim.dir/maintb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Mar 09 10:05:39 2017. For additional details about this file, please refer to the WebTalk help file at F:/Xilinx_Vivado_SDK_2015.2_0626_1/new/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 09 10:05:39 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 869.148 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'G:/1-/cpu-run-sim/cpu2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "maintb_behav -key {Behavioral:sim_1:Functional:maintb} -tclbatch {maintb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source maintb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 869.148 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'maintb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 869.148 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.

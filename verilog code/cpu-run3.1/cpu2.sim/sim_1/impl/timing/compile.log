@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu2/cpu2.sim/sim_1/impl/timing/maintb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLK_1s
+INFO: [VRFC 10-311] analyzing module clockdivider
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module sevenseg
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu2/cpu2.srcs/sim_1/new/maintb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maintb
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/1-/cpu2/cpu2.sim/sim_1/impl/timing/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [G:/1-/cpu2/cpu2.sim/sim_1/impl/timing/glbl.v:6]
